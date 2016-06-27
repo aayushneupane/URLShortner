@@ -19,15 +19,24 @@ function urlPost(req, res, next){
 	req.checkBody('input','Input URL is empty').notEmpty();
 	var errors = req.validationErrors();
 	var message = "";
+	var shorturl = "";
 	console.log("urlpost errors " + errors);
+
+	if (errors){
+		for (var i = 0; i < errors.length; i++){
+			console.log(errors[i]);
+		}
+	}
 	if (errors) {
 		res.render('index', {
 			errors: errors
 		});
 	} else {
 		if (isValid(input)) {
+			console.log("valid");
 			res.render('index', {
 				message: input + ' is valid',
+				shorturl : 'http://test.co/abc'
 
 			})
 		} else {
@@ -35,6 +44,7 @@ function urlPost(req, res, next){
 				error: 'Input is not a valid URL'
 			})
 		}
+		console.log('urlpost message ' + message);
 	}
 }
 function isValid(url){

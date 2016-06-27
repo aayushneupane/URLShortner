@@ -4,11 +4,6 @@
     {{/each}}
 {{/if}}
 
-{{#if message}}
-    {{#each message}}
-        <div class="alert alert-success">{{msg}}</div>
-    {{/each}}
-{{/if}}
 
 <!-- Insert Body here -->
 <div class="container">
@@ -26,5 +21,8 @@
 	</div>
 </form>
 	<div class = "url-body">
+    {{#if shorturl}}
+        {{shorturl}}
+    {{/if}}
 	</div>
 </div><!-- /.container -->

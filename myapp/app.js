@@ -17,7 +17,7 @@ mongoose.connect('mongodb://localhost/test'); //connect to the login db
 var db = mongoose.connection; //set db to mondoose connection
 
 var app = express(); //initialize express
-
+app.use(flash());
 app.locals.points = "1,500";
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));  //where/how views are handled
@@ -106,6 +106,11 @@ app.get('/api/urls', function(req, res){
   });
 });
 
+app.get('/flash', function(req, res){
+  req.flash('info', 'flash is back');
+  res.redirect('/');
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
@@ -144,7 +149,7 @@ app.use(function(err, req, res, next) {
   resave: true,
 }));*/
 // Connect flash middleware
-app.use(flash());
+
 
 // Global Vars for flash messages
 app.use(function (req, res, next){
