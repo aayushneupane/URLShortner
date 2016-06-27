@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdb89b2a-791c-4c80-a72e-963c81cb8f2a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/app.js" afterPath="$PROJECT_DIR$/myapp/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/routes/index.js" afterPath="$PROJECT_DIR$/myapp/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/views/index.handlebars" afterPath="$PROJECT_DIR$/myapp/views/index.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/views/layouts/layout.handlebars" afterPath="$PROJECT_DIR$/myapp/views/layouts/layout.handlebars" />
     </list>
     <ignored path="URLShortner.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,14 +39,14 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.806338">
+        <splitter split-orientation="horizontal" split-proportion="0.85714287">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/myapp/routes/index.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="257">
-                      <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+                    <state relative-caret-position="294">
+                      <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
                       <folding />
                     </state>
                   </provider>
@@ -82,8 +79,8 @@
               <file leaf-file-name="index.handlebars" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/myapp/views/index.handlebars">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="366">
-                      <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+                    <state relative-caret-position="204">
+                      <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -357,12 +354,12 @@
       <updated>1465372693534</updated>
       <workItem from="1465372695955" duration="601000" />
       <workItem from="1466660627280" duration="11919000" />
-      <workItem from="1466799481315" duration="6964000" />
+      <workItem from="1466799481315" duration="7949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19484000" />
+    <option name="totallyTimeSpent" value="20469000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -546,16 +543,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myapp/views/index.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        <state relative-caret-position="204">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myapp/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="294">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
           <folding />
         </state>
       </provider>

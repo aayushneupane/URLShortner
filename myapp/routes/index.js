@@ -36,7 +36,7 @@ function urlPost(req, res, next){
 			console.log("valid");
 			res.render('index', {
 				message: input + ' is valid',
-				shorturl : 'http://test.co/abc'
+				shorturl : createRandomString()//randomly generated url
 
 			})
 		} else {
@@ -55,6 +55,15 @@ function isValid(url){
 		console.log('Not a URI');
 		return 0;
 	}
+}
+
+function createRandomString(){
+	var base = 36;
+	var init = 2;
+	var end = 5; //5-2=3 -> length of url
+	var surl = Math.random().toString(base).substring(init, end);
+	console.log("random url " + surl);
+	return surl;
 }
 
 module.exports = router;
