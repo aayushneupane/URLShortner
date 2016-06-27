@@ -18,21 +18,33 @@ function urlPost(req, res, next){
 
 	req.checkBody('input','Input URL is empty').notEmpty();
 	var errors = req.validationErrors();
+	var message = "";
+	var shorturl = "";
 	console.log("urlpost errors " + errors);
+
+	if (errors){
+		for (var i = 0; i < errors.length; i++){
+			console.log(errors[i]);
+		}
+	}
 	if (errors) {
 		res.render('index', {
 			errors: errors
 		});
 	} else {
 		if (isValid(input)) {
+			console.log("valid");
 			res.render('index', {
-				error: input + 'is valid'
+				message: input + ' is valid',
+				shorturl : createRandomString()//randomly generated url need to store in db
+
 			})
 		} else {
 			res.render('index', {
 				error: 'Input is not a valid URL'
 			})
 		}
+		console.log('urlpost message ' + message);
 	}
 }
 function isValid(url){
@@ -43,6 +55,15 @@ function isValid(url){
 		console.log('Not a URI');
 		return 0;
 	}
+}
+
+function createRandomString(){
+	var base = 36;
+	var init = 2;
+	var end = 5; //5-2=3 -> length of url
+	var surl = Math.random().toString(base).substring(init, end);
+	console.log("random url " + surl);
+	return surl;
 }
 
 module.exports = router;

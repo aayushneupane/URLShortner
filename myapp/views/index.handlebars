@@ -4,6 +4,7 @@
     {{/each}}
 {{/if}}
 
+
 <!-- Insert Body here -->
 <div class="container">
 <form name="url-input" method="POST" action="/">
@@ -20,5 +21,9 @@
 	</div>
 </form>
 	<div class = "url-body">
+        <!-- need to change the design of how the url is displayed -->
+    {{#if shorturl}}
+        {{shorturl}}
+    {{/if}}
 	</div>
 </div><!-- /.container -->
