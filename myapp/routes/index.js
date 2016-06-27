@@ -36,7 +36,7 @@ function urlPost(req, res, next){
 			console.log("valid");
 			res.render('index', {
 				message: input + ' is valid',
-				shorturl : createRandomString()//randomly generated url
+				shorturl : createRandomString()//randomly generated url need to store in db
 
 			})
 		} else {
