@@ -4,6 +4,12 @@
     {{/each}}
 {{/if}}
 
+{{#if message}}
+    {{#each message}}
+        <div class="alert alert-success">{{msg}}</div>
+    {{/each}}
+{{/if}}
+
 <!-- Insert Body here -->
 <div class="container">
 <form name="url-input" method="POST" action="/">

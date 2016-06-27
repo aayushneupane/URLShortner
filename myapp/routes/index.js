@@ -18,6 +18,7 @@ function urlPost(req, res, next){
 
 	req.checkBody('input','Input URL is empty').notEmpty();
 	var errors = req.validationErrors();
+	var message = "";
 	console.log("urlpost errors " + errors);
 	if (errors) {
 		res.render('index', {
@@ -26,7 +27,8 @@ function urlPost(req, res, next){
 	} else {
 		if (isValid(input)) {
 			res.render('index', {
-				error: input + 'is valid'
+				message: input + ' is valid',
+
 			})
 		} else {
 			res.render('index', {
